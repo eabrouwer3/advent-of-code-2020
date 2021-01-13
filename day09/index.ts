@@ -1,7 +1,7 @@
 import * as R from "https://x.nest.land/ramda@0.27.0/source/index.js";
 
 const problem1 = async () => {
-    const text = await Deno.readTextFile('./day9/input.txt');
+    const text = await Deno.readTextFile('./day09/input.txt');
     const nums = text.split('\n').map(n => +n);
     const canSum = (n: number) => {
         for (let i of nums.slice(n-25, n)) {
@@ -21,7 +21,7 @@ const problem1 = async () => {
 };
 
 const problem2 = async () => {
-    const text = await Deno.readTextFile('./day9/input.txt');
+    const text = await Deno.readTextFile('./day09/input.txt');
     const nums = text.split('\n').map(n => +n);
     const invalidNum = await problem1();
     for (let i = 0;; i++) {

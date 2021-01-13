@@ -17,7 +17,7 @@ const getSeat = (seat: string) => {
 }
 
 const problem1 = async () => {
-    const text = await Deno.readTextFile('./day5/input.txt');
+    const text = await Deno.readTextFile('./day05/input.txt');
     const seats = text.split('\n');
     const ids = seats.map(seat => {
         const [row, col] = getSeat(seat);
@@ -27,7 +27,7 @@ const problem1 = async () => {
 }
 
 const problem2 = async () => {
-    const text = await Deno.readTextFile('./day5/input.txt');
+    const text = await Deno.readTextFile('./day05/input.txt');
     const seats = text.split('\n');
     const chart = Array(128).fill('_').map(() => Array(8).fill('_'));
     seats.forEach(seat => {

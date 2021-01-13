@@ -1,5 +1,5 @@
 const problem = async (n: number) => {
-    const text = await Deno.readTextFile('./day1/input.txt');
+    const text = await Deno.readTextFile('./day01/input.txt');
     const nums = text.split('\n').map(n => +n);
     for (let i of nums) {
         for (let j of nums) {

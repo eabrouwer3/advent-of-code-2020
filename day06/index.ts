@@ -1,7 +1,7 @@
 import * as R from "https://x.nest.land/ramda@0.27.0/source/index.js";
 
 const problem1 = async () => {
-    const text = await Deno.readTextFile('./day6/input.txt');
+    const text = await Deno.readTextFile('./day06/input.txt');
     const groups = text.split('\n\n');
     return R.sum(
         groups.map(group =>
@@ -14,7 +14,7 @@ const problem1 = async () => {
 }
 
 const problem2 = async () => {
-    const text = await Deno.readTextFile('./day6/input.txt');
+    const text = await Deno.readTextFile('./day06/input.txt');
     const groups = text.split('\n\n');
     return R.sum(
         groups.map(group => {

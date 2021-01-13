@@ -1,7 +1,7 @@
 import * as R from "https://x.nest.land/ramda@0.27.0/source/index.js";
 
 const problem1 = async () => {
-    const text = await Deno.readTextFile('./day2/input.txt');
+    const text = await Deno.readTextFile('./day02/input.txt');
     const vals = text.split('\n').map(row => {
         const [rule1, rule2, pass] = row.split(' ');
         const [low, high] = rule1.split('-').map(n => +n);
@@ -13,7 +13,7 @@ const problem1 = async () => {
 };
 
 const problem2 = async () => {
-    const text = await Deno.readTextFile('./day2/input.txt');
+    const text = await Deno.readTextFile('./day02/input.txt');
     const vals = text.split('\n').map(row => {
         const [rule1, rule2, pass] = row.split(' ');
         const [a, b] = rule1.split('-').map(n => +n);

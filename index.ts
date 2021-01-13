@@ -1,14 +1,16 @@
-import day1 from './day1/index.ts';
-import {problem1 as day2_1, problem2 as day2_2} from "./day2/index.ts";
-import {problem1 as day3_1, problem2 as day3_2} from "./day3/index.ts";
-import {problem1 as day4_1, problem2 as day4_2} from "./day4/index.ts";
-import {problem1 as day5_1, problem2 as day5_2} from "./day5/index.ts";
-import {problem1 as day6_1, problem2 as day6_2} from "./day6/index.ts";
-import {problem1 as day7_1, problem2 as day7_2} from "./day7/index.ts";
-import {problem1 as day8_1, problem2 as day8_2} from "./day8/index.ts";
-import {problem1 as day9_1, problem2 as day9_2} from "./day9/index.ts";
+import day1 from './day01/index.ts';
+import {problem1 as day2_1, problem2 as day2_2} from "./day02/index.ts";
+import {problem1 as day3_1, problem2 as day3_2} from "./day03/index.ts";
+import {problem1 as day4_1, problem2 as day4_2} from "./day04/index.ts";
+import {problem1 as day5_1, problem2 as day5_2} from "./day05/index.ts";
+import {problem1 as day6_1, problem2 as day6_2} from "./day06/index.ts";
+import {problem1 as day7_1, problem2 as day7_2} from "./day07/index.ts";
+import {problem1 as day8_1, problem2 as day8_2} from "./day08/index.ts";
+import {problem1 as day9_1, problem2 as day9_2} from "./day09/index.ts";
 import {problem1 as day10_1, problem2 as day10_2} from "./day10/index.ts";
 import {problem1 as day11_1, problem2 as day11_2} from "./day11/index.ts";
+import {problem1 as day12_1, problem2 as day12_2} from "./day12/index.ts";
+import {problem1 as day13_1, problem2 as day13_2} from "./day13/index.ts";
 
 const runAll = async () => {
     console.log('Day 01 Problem 1');
@@ -65,6 +67,16 @@ const runAll = async () => {
     console.log(await day11_1());
     console.log('Day 11 Problem 2');
     console.log(await day11_2());
+
+    console.log('Day 12 Problem 1');
+    console.log(await day12_1());
+    console.log('Day 12 Problem 2');
+    console.log(await day12_2());
+
+    console.log('Day 13 Problem 1');
+    console.log(await day13_1());
+    console.log('Day 13 Problem 2');
+    console.log(await day13_2());
 };
 
 runAll().catch(console.error);

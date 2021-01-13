@@ -1,7 +1,7 @@
 import * as R from "https://x.nest.land/ramda@0.27.0/source/index.js";
 
 const problem1 = async () => {
-    const text = await Deno.readTextFile('./day7/input.txt');
+    const text = await Deno.readTextFile('./day07/input.txt');
     const rules = text.split('\n');
     const parsedRules = R.reduce(R.mergeDeepWith(R.concat, R.__, R.__), {}, rules.map(rule => {
         const [bag, contains] = rule.split(' bags contain ');
@@ -21,7 +21,7 @@ const problem1 = async () => {
 }
 
 const problem2 = async () => {
-    const text = await Deno.readTextFile('./day7/input.txt');
+    const text = await Deno.readTextFile('./day07/input.txt');
     const rules = text.split('\n');
     const parsedRules = Object.fromEntries(rules.map(rule => {
         const [bag, contains] = rule.split(' bags contain ');
